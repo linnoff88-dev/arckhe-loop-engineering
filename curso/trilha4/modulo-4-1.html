@@ -4,18 +4,18 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="loop-engineering" name="inema-course"/>
+<meta content="loop-engineering" name="ARCKHÉ-course"/>
 <title>Modulo 4.1 — Loop Simples: Task Runner | Loop Engineering</title>
 <!-- ANTI-FOUC: script bloqueante ANTES de tudo -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -24,17 +24,17 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr);
@@ -44,7 +44,7 @@
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -78,7 +78,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "loop-engineering",
     "tracks": [
@@ -152,8 +152,8 @@
 
     [id^="topico-"] { scroll-margin-top: 4rem; }
   </style>
-<link href="https://inematds.github.io/loop-engineering/curso/trilha4/modulo-4-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/en/curso/trilha4/modulo-4-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/es/curso/trilha4/modulo-4-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha4/modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha4/modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha4/modulo-4-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha4/modulo-4-1.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha4/modulo-4-1.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha4/modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha4/modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -164,7 +164,7 @@
 <span class="font-bold text-lg hidden sm:inline">Loop Engineering</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -231,14 +231,14 @@
 </div>
 </div>
 </header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-inema-module="4-1" data-inema-track="4" id="conteudo">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHÉ-module="4-1" data-ARCKHÉ-track="4" id="conteudo">
 <!-- TOPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-1" id="topico-1">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">📝 O Prompt que Dispara o Loop</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t1-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t1-p1">
         O ponto de partida de qualquer task runner e o prompt que carrega a capability de loop do Claude Code. Com uma unica linha, o agente sabe como montar o sistema de loop, iterar sobre tarefas e se auto-agendar.
       </p>
 <div class="bg-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
@@ -246,7 +246,7 @@
 <span class="mr-2">📋</span> Prompt Pronto (copie e use)
         </h3>
 <pre class="bg-dark-900 rounded-lg p-4 overflow-x-auto border border-dark-600 mb-4"><code class="text-amber-300 text-sm">Load the loop skill, work through plan.md one task at a time</code></pre>
-<p class="text-neutral-300 text-sm mb-4" data-inema-block="m4-1-t1-p2">Esse prompt faz tres coisas: carrega o "loop skill" (capability nativa do Claude Code), aponta para o arquivo plan.md como fonte de tarefas, e instrui o agente a processar uma tarefa por ciclo.</p>
+<p class="text-neutral-300 text-sm mb-4" data-ARCKHÉ-block="m4-1-t1-p2">Esse prompt faz tres coisas: carrega o "loop skill" (capability nativa do Claude Code), aponta para o arquivo plan.md como fonte de tarefas, e instrui o agente a processar uma tarefa por ciclo.</p>
 </div>
 <blockquote class="border-l-4 border-amber-500/50 pl-4 mb-6 italic text-neutral-300">
         "I know this is a very, very basic example, but I want to stay simple on purpose. But it wrote the prompt: slash loop work through plan.md one task at a time."
@@ -274,21 +274,21 @@
 </div>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-2" id="topico-2">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">📋 Template de plan.md</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t2-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t2-p1">
         O plan.md e o contrato entre voce e o loop. Cada tarefa deve ser <strong class="text-amber-400">especifica, verificavel e independente</strong>. Tarefas vagas geram resultados vagos. Tarefas interdependentes quebram o isolamento do loop.
       </p>
 <div class="bg-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
@@ -340,21 +340,21 @@
 </div>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-3" id="topico-3">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🔍 Monitorando o Progresso</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t3-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t3-p1">
         Depois de disparar o loop, o agente trabalha autonomamente. Cada ciclo segue o mesmo padrao: acordar, verificar a proxima tarefa, executar, validar e agendar o proximo wake-up. Voce pode acompanhar diretamente no terminal.
       </p>
 <blockquote class="border-l-4 border-amber-500/50 pl-4 mb-6 italic text-neutral-300">
@@ -407,21 +407,21 @@
         <footer class="text-amber-400 text-sm mt-1 not-italic">-- Cole Medin</footer>
 </blockquote>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-4" id="topico-4">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">⚙ Configurando Exit Conditions</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t4-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t4-p1">
         Um loop sem exit condition e o erro mais caro que voce pode cometer. O agente vai rodar indefinidamente, gastando tokens sem convergir para um resultado. <strong class="text-amber-400">Sempre defina quando o loop deve parar.</strong>
 </p>
 <div class="bg-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
@@ -448,24 +448,24 @@
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
 <span class="mr-2">🎯</span> Ponto de Reflexao
         </h3>
-<p class="text-neutral-300" data-inema-block="m4-1-t4-p2">A exit condition mais segura e a combinacao de /goal (conclusao natural) + max iterations (safety net). Assim, se algo der errado e o agente nao conseguir completar, ele para em vez de queimar tokens indefinidamente.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m4-1-t4-p2">A exit condition mais segura e a combinacao de /goal (conclusao natural) + max iterations (safety net). Assim, se algo der errado e o agente nao conseguir completar, ele para em vez de queimar tokens indefinidamente.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-5" id="topico-5">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🔄 Variacoes do Prompt</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t5-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t5-p1">
         O prompt basico funciona para task lists simples, mas cenarios diferentes pedem variacoes. Aqui estao prompts adaptados para os casos de uso mais comuns.
       </p>
 <div class="space-y-4 mb-6">
@@ -497,49 +497,49 @@ Mark the task done when the doc file is created and has at least 200 words.</cod
 </div>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-6" id="topico-6">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">❓ Questionamentos</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m4-1-t6-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m4-1-t6-p1">
         Antes de sair usando o task runner em tudo, vale levantar as questoes que o proprio Cole Medin coloca sobre a abordagem basica.
       </p>
 <div class="space-y-4 mb-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-amber-400 mb-2">O loop simples escala?</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m4-1-t6-p2">Para 5 tarefas, funciona. Para 50, o context window vai explodir. Cole Medin observa que "if you loop for a while, you're going to completely bloat your context for your LLM and overwhelm it." O task runner simples tem limite natural de escala.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m4-1-t6-p2">Para 5 tarefas, funciona. Para 50, o context window vai explodir. Cole Medin observa que "if you loop for a while, you're going to completely bloat your context for your LLM and overwhelm it." O task runner simples tem limite natural de escala.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-amber-400 mb-2">Qualidade vs. velocidade</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m4-1-t6-p3">O loop executa rapido, mas sem revisao humana entre tarefas. Para PoCs e exploracao, e aceitavel. Para codigo de producao, Cole e direto: "there is no way you're gonna convince me that loop engineering is the way to get the best results possible."</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m4-1-t6-p3">O loop executa rapido, mas sem revisao humana entre tarefas. Para PoCs e exploracao, e aceitavel. Para codigo de producao, Cole e direto: "there is no way you're gonna convince me that loop engineering is the way to get the best results possible."</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-amber-400 mb-2">Custo de um loop basico</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m4-1-t6-p4">Mesmo o loop mais simples acumula tokens rapido. Cada wake-up recarrega o contexto. Para 5 tarefas com validacao, espere gastar entre 50k e 200k tokens dependendo da complexidade.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m4-1-t6-p4">Mesmo o loop mais simples acumula tokens rapido. Cada wake-up recarrega o contexto. Para 5 tarefas com validacao, espere gastar entre 50k e 200k tokens dependendo da complexidade.</p>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
 <span class="mr-2">🎯</span> Ponto de Reflexao
         </h3>
-<p class="text-neutral-300" data-inema-block="m4-1-t6-p5">O task runner e a porta de entrada. Comece aqui, entenda o mecanismo, e quando precisar de mais controle, passe para o modulo 4.2 (orchestrator + workers). A progressao e deliberada: simples primeiro, complexo quando necessario.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m4-1-t6-p5">O task runner e a porta de entrada. Comece aqui, entenda o mecanismo, e quando precisar de mais controle, passe para o modulo 4.2 (orchestrator + workers). A progressao e deliberada: simples primeiro, complexo quando necessario.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-amber-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
@@ -585,7 +585,7 @@ Mark the task done when the doc file is created and has at least 200 words.</cod
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Loop Engineering -- Agentes em Loop Continuo | <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> | 2026</p>
+<p>Loop Engineering -- Agentes em Loop Continuo | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> | 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS -->
@@ -631,8 +631,8 @@ Mark the task done when the doc file is created and has at least 200 words.</cod
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
     }
   </script>
 </body>

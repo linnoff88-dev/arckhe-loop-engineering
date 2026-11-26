@@ -4,11 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="loop-engineering" name="inema-course"/>
+<meta content="loop-engineering" name="ARCKHÉ-course"/>
 <title>Module 3.3 — Control Dashboard (Agent Control Plane) | Loop Engineering</title>
 <!-- Anti-FOUC (PRIMEIRO no head, antes de tudo) -->
 <script>
-  (function(){try{var h=document.documentElement,D={theme:'inema-dark',font:'inter',fontScale:100,lineWidth:68,leading:1.7,accent:'emerald'};function c(o){var r={};for(var x in o)r[x]=o[x];return r}var p=c(D);try{var raw=localStorage.getItem('inema.prefs');if(raw){var j=JSON.parse(raw);if(j&&typeof j==='object')for(var k in D)if(j[k]!=null)p[k]=j[k]}else{var l=localStorage.getItem('theme');if(l==='light')p.theme='claro';else if(l==='dark')p.theme='inema-dark'}}catch(e){p=c(D)}var T={'inema-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'}};var t=T[p.theme]||T['inema-dark'];if(t.dark===true)h.classList.add('dark');else if(t.dark===false)h.classList.remove('dark');if(t.attr)h.setAttribute('data-theme',t.attr);else h.removeAttribute('data-theme');h.style.colorScheme=t.cs?t.cs:(h.classList.contains('dark')?'dark':'light');h.setAttribute('data-font',p.font||'inter');h.setAttribute('data-accent',p.accent||'emerald');var s=h.style,sc=+p.fontScale||100;s.setProperty('--inema-font-scale',(sc/100).toString());s.setProperty('font-size',sc+'%');s.setProperty('--measure',(+p.lineWidth||68)+'ch');s.setProperty('--lh-body',(+p.leading||1.7).toString());var fam=p.font==='system'?'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif':p.font==='leitura'?'"Atkinson Hyperlegible","Inter",system-ui,sans-serif':'"Inter",system-ui,sans-serif';s.setProperty('--font-body',fam);var A={emerald:[152,76,45],blue:[217,91,60],purple:[258,90,66],amber:[38,92,50],teal:[174,72,41],rose:[350,89,60]};var a=A[p.accent]||A.emerald;s.setProperty('--accent-h',a[0]+'');s.setProperty('--accent-s',a[1]+'%');s.setProperty('--accent-l',a[2]+'%');s.setProperty('--accent','hsl('+a[0]+' '+a[1]+'% '+a[2]+'%)')}catch(err){try{document.documentElement.classList.add('dark');document.documentElement.style.colorScheme='dark'}catch(e){}}})();
+  (function(){try{var h=document.documentElement,D={theme:'ARCKHÉ-dark',font:'inter',fontScale:100,lineWidth:68,leading:1.7,accent:'emerald'};function c(o){var r={};for(var x in o)r[x]=o[x];return r}var p=c(D);try{var raw=localStorage.getItem('ARCKHÉ.prefs');if(raw){var j=JSON.parse(raw);if(j&&typeof j==='object')for(var k in D)if(j[k]!=null)p[k]=j[k]}else{var l=localStorage.getItem('theme');if(l==='light')p.theme='claro';else if(l==='dark')p.theme='ARCKHÉ-dark'}}catch(e){p=c(D)}var T={'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'}};var t=T[p.theme]||T['ARCKHÉ-dark'];if(t.dark===true)h.classList.add('dark');else if(t.dark===false)h.classList.remove('dark');if(t.attr)h.setAttribute('data-theme',t.attr);else h.removeAttribute('data-theme');h.style.colorScheme=t.cs?t.cs:(h.classList.contains('dark')?'dark':'light');h.setAttribute('data-font',p.font||'inter');h.setAttribute('data-accent',p.accent||'emerald');var s=h.style,sc=+p.fontScale||100;s.setProperty('--ARCKHÉ-font-scale',(sc/100).toString());s.setProperty('font-size',sc+'%');s.setProperty('--measure',(+p.lineWidth||68)+'ch');s.setProperty('--lh-body',(+p.leading||1.7).toString());var fam=p.font==='system'?'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif':p.font==='leitura'?'"Atkinson Hyperlegible","Inter",system-ui,sans-serif':'"Inter",system-ui,sans-serif';s.setProperty('--font-body',fam);var A={emerald:[152,76,45],blue:[217,91,60],purple:[258,90,66],amber:[38,92,50],teal:[174,72,41],rose:[350,89,60]};var a=A[p.accent]||A.emerald;s.setProperty('--accent-h',a[0]+'');s.setProperty('--accent-s',a[1]+'%');s.setProperty('--accent-l',a[2]+'%');s.setProperty('--accent','hsl('+a[0]+' '+a[1]+'% '+a[2]+'%)')}catch(err){try{document.documentElement.classList.add('dark');document.documentElement.style.colorScheme='dark'}catch(e){}}})();
   </script>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
@@ -27,7 +27,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO em toda pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "loop-engineering",
     "tracks": [
@@ -119,8 +119,8 @@
     /* Scroll margin for sticky nav */
     [id^="topico-"] { scroll-margin-top: 4rem; }
   </style>
-<link href="https://inematds.github.io/loop-engineering/curso/trilha3/modulo-3-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/en/curso/trilha3/modulo-3-3.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/es/curso/trilha3/modulo-3-3.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha3/modulo-3-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-3-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha3/modulo-3-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha3/modulo-3-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha3/modulo-3-3.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha3/modulo-3-3.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha3/modulo-3-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-3-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha3/modulo-3-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -131,7 +131,7 @@
 <span class="font-bold text-lg hidden sm:inline">Loop Engineering</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -190,14 +190,14 @@
 </div>
 </div>
 </header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-inema-module="3-3" data-inema-track="3" id="conteudo">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHÉ-module="3-3" data-ARCKHÉ-track="3" id="conteudo">
 <!-- TOPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-1" id="topico-1">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🎯 What Is the Agent Control Plane</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-3-t1-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t1-p1">
         Cole Medin built the Agent Control Plane as a direct response to the problems he identified with pure loop engineering. It’s a <strong class="text-purple-400">open-source dashboard on GitHub</strong> which acts as the central nervous system of any loop setup: durability, observability, and human-in-the-loop in one place.
       </p>
 <blockquote class="border-l-4 border-purple-500/50 pl-4 mb-6 italic text-neutral-300">
@@ -211,7 +211,7 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 <div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600">
 <h4 class="font-bold text-purple-400 mb-2">Durability</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m3-3-t1-p2">All loops, events, and logs live in Postgres. If the agent goes down, the orchestrator resumes where it left off by reading the state from the database.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m3-3-t1-p2">All loops, events, and logs live in Postgres. If the agent goes down, the orchestrator resumes where it left off by reading the state from the database.</p>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 border border-dark-600">
 <h4 class="font-bold text-purple-400 mb-2">Observability</h4>
@@ -225,24 +225,24 @@
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <h3 class="text-lg font-semibold text-purple-400 mb-3">Context: why this exists</h3>
-<p class="text-neutral-300 text-sm" data-inema-block="m3-3-t1-p3">Cole is honest in saying this is "more experimental". But the motivation is concrete: without a dashboard, loops are black boxes. You start one, walk away, and when you come back, you don’t know whether the result is good or whether it burned tokens for nothing. The Agent Control Plane is an attempt to solve this in a practical, replicable way.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m3-3-t1-p3">Cole is honest in saying this is "more experimental". But the motivation is concrete: without a dashboard, loops are black boxes. You start one, walk away, and when you come back, you don’t know whether the result is good or whether it burned tokens for nothing. The Agent Control Plane is an attempt to solve this in a practical, replicable way.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-2" id="topico-2">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">💾 Postgres/Neon as a State Store</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-3-t2-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t2-p1">
         The heart of the system is a Postgres database hosted on <strong class="text-purple-400">Neon</strong> (serverless Postgres). All the loop state lives there: which round we're on, which workers were launched, which ones completed, which failed, and the cumulative cost.
       </p>
 <blockquote class="border-l-4 border-purple-500/50 pl-4 mb-6 italic text-neutral-300">
@@ -291,21 +291,21 @@
 </div>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-3" id="topico-3">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🔍 Observability: Real-Time Decisions</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-3-t3-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t3-p1">
         The real power of the dashboard lies in <strong class="text-purple-400">see exactly what the orchestrator decides in each round</strong>: how many workers it launches, which prompts it sends, and how it responds to the results that come back. Without this, you're flying blind.
       </p>
 <blockquote class="border-l-4 border-purple-500/50 pl-4 mb-6 italic text-neutral-300">
@@ -324,31 +324,31 @@
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-bold text-neutral-300 mb-4">The Live Demo</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m3-3-t3-p2">Cole demonstrated it live in the video: he created a prompt to build a Kanban board as a single-page app and started the loop. In the dashboard, you could see the orchestrator planning, spending 6,000 tokens on the initial plan, and dispatching three workers in the first round. "We can see that the orchestrator is deciding how to split up the work right now."</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m3-3-t3-p2">Cole demonstrated it live in the video: he created a prompt to build a Kanban board as a single-page app and started the loop. In the dashboard, you could see the orchestrator planning, spending 6,000 tokens on the initial plan, and dispatching three workers in the first round. "We can see that the orchestrator is deciding how to split up the work right now."</p>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
 <span class="mr-2">💡</span> Insight: Dashboard as an Improvement Tool
         </h3>
-<p class="text-neutral-300" data-inema-block="m3-3-t3-p3">Cole points out that observability isn’t just for monitoring, but for improvement. By analyzing the logs in the database, you (or even your coding agent) can identify inefficiency patterns and adjust the harness. The dashboard becomes a tool for continuous learning about the system itself.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m3-3-t3-p3">Cole points out that observability isn’t just for monitoring, but for improvement. By analyzing the logs in the database, you (or even your coding agent) can identify inefficiency patterns and adjust the harness. The dashboard becomes a tool for continuous learning about the system itself.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-4" id="topico-4">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">💰 Cost Tracking per Run</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-3-t4-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t4-p1">
         One of the dashboard's most practical features is the <strong class="text-purple-400">integrated cost tracking</strong>. Cole built this because he realized that without cost visibility, it's impossible to know whether the loop is efficient or burning money.
       </p>
 <blockquote class="border-l-4 border-purple-500/50 pl-4 mb-6 italic text-neutral-300">
@@ -362,7 +362,7 @@
 <span class="text-purple-400 font-bold">1.</span>
 <div>
 <h4 class="font-semibold text-white">Orchestrator vs. worker cost</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m3-3-t4-p2">The orchestrator spends tokens reasoning about the state and planning. Workers spend tokens executing. Viewing the breakdown shows where to optimize.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m3-3-t4-p2">The orchestrator spends tokens reasoning about the state and planning. Workers spend tokens executing. Viewing the breakdown shows where to optimize.</p>
 </div>
 </div>
 <div class="flex items-start space-x-3">
@@ -385,24 +385,24 @@
 <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center">
 <span class="mr-2">⚠️</span> The Scary Number
         </h3>
-<p class="text-neutral-300" data-inema-block="m3-3-t4-p3">1 million tokens for a relatively simple app. And Cole using Kimi (the cheapest model), not Opus. Without cost tracking, this kind of spending goes unnoticed. The dashboard turns an invisible number into something actionable.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m3-3-t4-p3">1 million tokens for a relatively simple app. And Cole using Kimi (the cheapest model), not Opus. Without cost tracking, this kind of spending goes unnoticed. The dashboard turns an invisible number into something actionable.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-5" id="topico-5">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">✋ Human-in-the-Loop: Pause + Approve</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-3-t5-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t5-p1">
         Cole considers human-in-the-loop the <strong class="text-purple-400">most important guardrail</strong> for loop engineering. The dashboard lets you pause the loop after any round and require human approval before continuing. This solves the classic problem of runaway loops.
       </p>
 <blockquote class="border-l-4 border-purple-500/50 pl-4 mb-6 italic text-neutral-300">
@@ -414,7 +414,7 @@
 <div class="space-y-4">
 <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
 <h4 class="font-semibold text-white mb-1">Pause between rounds</h4>
-<p class="text-sm text-neutral-400" data-inema-block="m3-3-t5-p2">The loop completes a round, writes the state to the database, and stops. The human gets a notification (or sees it on the dashboard) and decides: approve and continue, or intervene and adjust.</p>
+<p class="text-sm text-neutral-400" data-ARCKHÉ-block="m3-3-t5-p2">The loop completes a round, writes the state to the database, and stops. The human gets a notification (or sees it on the dashboard) and decides: approve and continue, or intervene and adjust.</p>
 </div>
 <div class="bg-dark-700/50 rounded-xl p-4 border border-dark-600">
 <h4 class="font-semibold text-white mb-1">Approve with identity</h4>
@@ -430,24 +430,24 @@
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
 <span class="mr-2">🎯</span> Reflection Point
         </h3>
-<p class="text-neutral-300" data-inema-block="m3-3-t5-p3">The problem with many loop engineering setups is that people "set up these systems to just go, go, go, go. And then you have a run for a day. And by the time it comes back, you just have crap." HITL isn't overhead: it's the difference between a useful loop and a destructive one.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m3-3-t5-p3">The problem with many loop engineering setups is that people "set up these systems to just go, go, go, go. And then you have a run for a day. And by the time it comes back, you just have crap." HITL isn't overhead: it's the difference between a useful loop and a destructive one.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-3-3#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-3#topico-6" id="topico-6">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">❓ Questions and Deployment with Retool</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-3-t6-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t6-p1">
         Cole demonstrates how the local dashboard can be <strong class="text-purple-400">deployed in the cloud via Retool</strong>, turning a personal tool into team infrastructure. The process is simple: import React, connect to Neon, and get a URL accessible from anywhere.
       </p>
 <blockquote class="border-l-4 border-purple-500/50 pl-4 mb-6 italic text-neutral-300">
@@ -474,23 +474,23 @@
 <div class="space-y-4 mb-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-purple-400 mb-2">Does the dashboard need to exist?</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m3-3-t6-p2">Yes, if you plan to use loops seriously. Without visibility, you're operating in the dark. Cole was direct: he built the dashboard because he needed it, not as an academic exercise. Observability is a requirement, not a nice-to-have.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m3-3-t6-p2">Yes, if you plan to use loops seriously. Without visibility, you're operating in the dark. Cole was direct: he built the dashboard because he needed it, not as an academic exercise. Observability is a requirement, not a nice-to-have.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-purple-400 mb-2">It doesn't need to be sophisticated</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m3-3-t6-p3">The point isn't to build an enterprise dashboard. It's to have a minimum level of visibility: which rounds ran, how much they cost, and where the orchestrator went wrong. Even a script that queries the database and generates a report is better than nothing.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m3-3-t6-p3">The point isn't to build an enterprise dashboard. It's to have a minimum level of visibility: which rounds ran, how much they cost, and where the orchestrator went wrong. Even a script that queries the database and generates a report is better than nothing.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-purple-400 mb-2">The Future: Dashboards as a “Second Brain”</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m3-3-t6-p4">Cole mentions that he’s integrating dashboards into his "second brain" to manage autonomous tasks. The idea is that the dashboard isn’t just for coding loops, but for any system where agents work autonomously and need supervision.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m3-3-t6-p4">Cole mentions that he’s integrating dashboards into his "second brain" to manage autonomous tasks. The idea is that the dashboard isn’t just for coding loops, but for any system where agents work autonomously and need supervision.</p>
 </div>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-purple-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
@@ -535,7 +535,7 @@
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Loop Engineering — Agents in Continuous Loops - 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a></p>
+<p>Loop Engineering — Agents in Continuous Loops - 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p>
 </div>
 </footer>
 <script>
@@ -558,8 +558,8 @@
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
     }
   </script>
 </body>

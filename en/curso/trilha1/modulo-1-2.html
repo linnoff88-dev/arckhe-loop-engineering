@@ -4,18 +4,18 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="loop-engineering" name="inema-course"/>
+<meta content="loop-engineering" name="ARCKHÉ-course"/>
 <title>Module 1.2 — The Fundamental Building Blocks | Loop Engineering</title>
 <!-- ANTI-FOUC: script bloqueante ANTES de tudo -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -24,17 +24,17 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr);
@@ -44,7 +44,7 @@
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -78,7 +78,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "loop-engineering",
     "tracks": [
@@ -154,8 +154,8 @@
     /* Scroll margin for sticky nav */
     [id^="topico-"] { scroll-margin-top: 4rem; }
   </style>
-<link href="https://inematds.github.io/loop-engineering/curso/trilha1/modulo-1-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/en/curso/trilha1/modulo-1-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/es/curso/trilha1/modulo-1-2.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha1/modulo-1-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha1/modulo-1-2.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha1/modulo-1-2.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -166,7 +166,7 @@
 <span class="font-bold text-lg hidden sm:inline">Loop Engineering</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html">
@@ -225,21 +225,21 @@
 </div>
 </div>
 </header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-inema-module="1-2" data-inema-track="1" id="conteudo">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHÉ-module="1-2" data-ARCKHÉ-track="1" id="conteudo">
 <!-- TOPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-1" id="topico-1">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🔁 /loop — The Execution Interval</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t1-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t1-p1">
         O <strong class="text-emerald-400">/loop</strong> is the most basic building block of loop engineering. It works like a cron job for AI agents: you set an interval (every 5 minutes, every hour), and Claude Code wakes up, checks the state of the world, does what needs to be done, and goes back to sleep. No human interaction in between.
       </p>
 <blockquote class="border-l-4 border-emerald-500/50 pl-4 mb-6 italic text-neutral-300">
         "With slash loop, we set an interval for running a prompt. So like, for example, every five minutes, I'm going to check for new GitHub issues in this repo and handle any that come in."
         <footer class="text-emerald-400 text-sm mt-1 not-italic">— Cole Medin</footer>
 </blockquote>
-<p class="text-neutral-400 text-sm mb-6" data-inema-block="m1-2-t1-p2">
+<p class="text-neutral-400 text-sm mb-6" data-ARCKHÉ-block="m1-2-t1-p2">
 <strong>In Portuguese:</strong> "With /loop, we set an interval for running a prompt. For example, every five minutes I’ll check this repo for new GitHub issues and take care of any that show up."
       </p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -287,31 +287,31 @@
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
 <span class="mr-2">🎯</span> Reflection Point
         </h3>
-<p class="text-neutral-300" data-inema-block="m1-2-t1-p3">The /loop is powerful for repetitive, predictable tasks, but it has a fundamental limitation: everything runs in the same Claude Code session. As Cole points out later, "if you loop for a while, you're going to completely bloat your context for your LLM and overwhelm it." The /loop works well for short cycles. For extended work, you need something more.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m1-2-t1-p3">The /loop is powerful for repetitive, predictable tasks, but it has a fundamental limitation: everything runs in the same Claude Code session. As Cole points out later, "if you loop for a while, you're going to completely bloat your context for your LLM and overwhelm it." The /loop works well for short cycles. For extended work, you need something more.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-2" id="topico-2">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">🎯 /goal — The Completion Criteria</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t2-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t2-p1">
         While /loop defines "when to wake up," the <strong class="text-emerald-400">/goal</strong> defines "when to stop." You set objective completion criteria, and the agent works until it meets them. There’s no fixed interval. The agent stays active until the condition is true.
       </p>
 <blockquote class="border-l-4 border-emerald-500/50 pl-4 mb-6 italic text-neutral-300">
         "So we set some criteria like here is how you know you are done. And then we're forcing the coding agent to work until it is done, kind of like Ralph loops that went viral a few months ago."
         <footer class="text-emerald-400 text-sm mt-1 not-italic">— Cole Medin</footer>
 </blockquote>
-<p class="text-neutral-400 text-sm mb-6" data-inema-block="m1-2-t2-p2">
+<p class="text-neutral-400 text-sm mb-6" data-ARCKHÉ-block="m1-2-t2-p2">
 <strong>In Portuguese:</strong> "We set criteria like, ‘This is how you know you’re done.’ Then we have the agent work until it’s finished, kind of like the Ralph loops that went viral."
       </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -338,31 +338,31 @@
 <h3 class="text-lg font-semibold text-emerald-400 mb-3 flex items-center">
 <span class="mr-2">⚠️</span> The Risk of Unbounded /goal
         </h3>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-2-t2-p3">If the completion criteria are poorly defined or impossible to meet, /goal becomes an infinite loop that burns tokens nonstop. Cole mentions that for a relatively simple app, he spent over 1 million tokens. Always set a maximum number of iterations along with /goal, or use timeouts as a safety net.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-2-t2-p3">If the completion criteria are poorly defined or impossible to meet, /goal becomes an infinite loop that burns tokens nonstop. Cole mentions that for a relatively simple app, he spent over 1 million tokens. Always set a maximum number of iterations along with /goal, or use timeouts as a safety net.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-3" id="topico-3">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">📅 /routines — Scheduled Jobs</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t3-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t3-p1">
         O <strong class="text-emerald-400">/routines</strong> is the third building block. Unlike /loop (short interval, repetitive task) and /goal (work until completion), /routines are <strong class="text-emerald-400">scheduled jobs with broad scope</strong>. Think of it as "every hour, wake up, look at the complete spec document, and handle the next task in the queue".
       </p>
 <blockquote class="border-l-4 border-emerald-500/50 pl-4 mb-6 italic text-neutral-300">
         "And finally, we have /routines. These are scheduled jobs. For example: every hour, I want you to wake up, check a broader spec document, and take care of the next task."
         <footer class="text-emerald-400 text-sm mt-1 not-italic">— Cole Medin</footer>
 </blockquote>
-<p class="text-neutral-400 text-sm mb-6" data-inema-block="m1-2-t3-p2">
+<p class="text-neutral-400 text-sm mb-6" data-ARCKHÉ-block="m1-2-t3-p2">
 <strong>In Portuguese:</strong> "And finally, we have /routines. These are scheduled jobs. For example: every hour, I want you to wake up, check a broader spec document, and take care of the next task."
       </p>
 <!-- SVG: Comparacao dos tres blocos -->
@@ -473,28 +473,28 @@
 </div>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-4" id="topico-4">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">🧩 How the Building Blocks Fit Together</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t4-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t4-p1">
         The strength of loop engineering isn’t in any one isolated block. It’s in the <strong class="text-emerald-400">combination</strong> of them to form a coherent system. Boris Cherny, for example, uses /routines to schedule work cycles, /goal within each cycle to define when the agent has finished a stage, and /loop to monitor external events between cycles.
       </p>
 <blockquote class="border-l-4 border-emerald-500/50 pl-4 mb-6 italic text-neutral-300">
         "Engenharia de loops é combinar ou criar um sistema em torno de todas essas coisas — rotinas, /loop — para que possamos fornecer um escopo de trabalho maior a um assistente de programaçêo com IA e fazer com que ele avance aos poucos."
         <footer class="text-emerald-400 text-sm mt-1 not-italic">— Cole Medin</footer>
 </blockquote>
-<p class="text-neutral-400 text-sm mb-6" data-inema-block="m1-2-t4-p2">
+<p class="text-neutral-400 text-sm mb-6" data-ARCKHÉ-block="m1-2-t4-p2">
 <strong>In Portuguese:</strong> "Engenharia de loops é combinar ou criar um sistema em torno de todas essas coisas — rotinas, /loop — para que possamos fornecer um escopo de trabalho maior a um assistente de programaçêo com IA e fazer com que ele avance aos poucos."
       </p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -518,31 +518,31 @@
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
 <span class="mr-2">🎯</span> Reflection Point
         </h3>
-<p class="text-neutral-300" data-inema-block="m1-2-t4-p3">The key word in Cole’s quote is "incrementally." The central idea of Loop Engineering isn’t to give the agent an entire project and say "do it." It’s to break the work into small cycles, each with a limited scope and its own validation. Without that, the agent tries to solve everything at once and, as Cole warns, "it will get completely overwhelmed".</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m1-2-t4-p3">The key word in Cole’s quote is "incrementally." The central idea of Loop Engineering isn’t to give the agent an entire project and say "do it." It’s to break the work into small cycles, each with a limited scope and its own validation. Without that, the agent tries to solve everything at once and, as Cole warns, "it will get completely overwhelmed".</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-5" id="topico-5">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🔧 The Loop Skill: Self-Assembly</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t5-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t5-p1">
         One of the most interesting things Cole demonstrated and that Claude Code has is a <strong class="text-emerald-400">internal capability called "loop skill"</strong>. You don't need to configure /loop manually. Just tell Claude Code to load the skill, and it builds the loop system on its own, deciding the interval and strategy.
       </p>
 <blockquote class="border-l-4 border-emerald-500/50 pl-4 mb-6 italic text-neutral-300">
         "You just tell it to use the loop skill. So there's a capability built right into the tool where it knows how to set up these loop systems based on what we ask it to do."
         <footer class="text-emerald-400 text-sm mt-1 not-italic">— Cole Medin</footer>
 </blockquote>
-<p class="text-neutral-400 text-sm mb-6" data-inema-block="m1-2-t5-p2">
+<p class="text-neutral-400 text-sm mb-6" data-ARCKHÉ-block="m1-2-t5-p2">
 <strong>In Portuguese:</strong> "You simply tell it to use the loop skill. There's a capability built into the tool that knows how to set up these loop systems based on what we ask it to do."
       </p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -590,52 +590,52 @@
 <h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center">
 <span class="mr-2">💡</span> Important Insight
         </h3>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-2-t5-p3">The fact that Claude Code sets up the loop on its own is technically impressive, but there's a dangerous side: you lose visibility into how the loop was configured. Cole deliberately used a simple example, but in Boris Cherny's systems with “tens of thousands of agents,” automatic setup without observability is a real risk.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-2-t5-p3">The fact that Claude Code sets up the loop on its own is technically impressive, but there's a dangerous side: you lose visibility into how the loop was configured. Cole deliberately used a simple example, but in Boris Cherny's systems with “tens of thousands of agents,” automatic setup without observability is a real risk.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-6" id="topico-6">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">❓ Questions</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t6-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t6-p1">
         The three building blocks seem simple. And they are. But that simplicity hides real pitfalls that need to be surfaced before you start implementing.
       </p>
 <div class="space-y-4 mb-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-emerald-400 mb-2">Does everything run in the same session?</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-2-t6-p2">Cole raises a structural problem: "you're not really working between different coding agent sessions. Like when you're just using /loop in Claude Code, it's really just continuing in the same coding agent session." This means inevitable context bloat. Each loop iteration adds more context, and the LLM becomes progressively more overwhelmed. It’s an architectural limitation, not a bug.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-2-t6-p2">Cole raises a structural problem: "you're not really working between different coding agent sessions. Like when you're just using /loop in Claude Code, it's really just continuing in the same coding agent session." This means inevitable context bloat. Each loop iteration adds more context, and the LLM becomes progressively more overwhelmed. It’s an architectural limitation, not a bug.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-emerald-400 mb-2">What is the real cost of maintaining these loops?</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-2-t6-p3">Each /loop wake-up consumes tokens. Every /goal iteration does too. And /routines, which read an entire spec each cycle, are especially expensive. Cole measured more than 1 million tokens for a simple app. If you pay per token, the bill adds up fast.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-2-t6-p3">Each /loop wake-up consumes tokens. Every /goal iteration does too. And /routines, which read an entire spec each cycle, are especially expensive. Cole measured more than 1 million tokens for a simple app. If you pay per token, the bill adds up fast.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-emerald-400 mb-2">What if the loop makes the wrong decision?</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-2-t6-p4">When Claude Code auto-builds the loop via a skill, it also decides the next cycle's prompt. If that decision is wrong, the error spreads to all subsequent cycles. Without a human in the loop, you only discover the problem after you've already spent tokens and time. Cole calls this "the biggest problem with loop engineering right now."</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-2-t6-p4">When Claude Code auto-builds the loop via a skill, it also decides the next cycle's prompt. If that decision is wrong, the error spreads to all subsequent cycles. Without a human in the loop, you only discover the problem after you've already spent tokens and time. Cole calls this "the biggest problem with loop engineering right now."</p>
 </div>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center">
 <span class="mr-2">⚠️</span> The Limit of Blocks Alone
         </h3>
-<p class="text-neutral-300" data-inema-block="m1-2-t6-p5">/loop, /goal, and /routines are primitives. They're the building blocks, not the house. Without an orchestration system that distributes work across different sessions, manages state externally, and allows human intervention, these blocks produce mediocre results for anything beyond simple demos. The next module (1.3) shows how the Orchestrator-Workers architecture solves exactly that.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m1-2-t6-p5">/loop, /goal, and /routines are primitives. They're the building blocks, not the house. Without an orchestration system that distributes work across different sessions, manages state externally, and allows human intervention, these blocks produce mediocre results for anything beyond simple demos. The next module (1.3) shows how the Orchestrator-Workers architecture solves exactly that.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
@@ -681,7 +681,7 @@
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Loop Engineering — Agents in Continuous Loops | <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> | 2026</p>
+<p>Loop Engineering — Agents in Continuous Loops | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> | 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS -->
@@ -727,8 +727,8 @@
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
     }
   </script>
 </body>

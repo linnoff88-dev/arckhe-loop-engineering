@@ -167,4 +167,4 @@ Receitas prontas para copiar e usar.
 - Código: TypeScript + Python quando relevante
 - Cada módulo tem seçêo "Prompt Pack" com prompts prontos para download
 - Cada módulo tem seçêo "Questionamentos" levantando dúvidas legítimas
-- Formato visual: INEMA dark premium âmbar/cyan, Tailwind CDN, learn layer v2
+- Formato visual: ARCKHÉ dark premium âmbar/cyan, Tailwind CDN, learn layer v2

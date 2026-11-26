@@ -4,18 +4,18 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="loop-engineering" name="inema-course"/>
+<meta content="loop-engineering" name="ARCKHÉ-course"/>
 <title>Module 1.1 — What Is Loop Engineering? | Loop Engineering</title>
 <!-- ANTI-FOUC: script bloqueante ANTES de tudo -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -24,17 +24,17 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr);
@@ -44,7 +44,7 @@
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -78,7 +78,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "loop-engineering",
     "tracks": [
@@ -154,8 +154,8 @@
     /* Scroll margin for sticky nav */
     [id^="topico-"] { scroll-margin-top: 4rem; }
   </style>
-<link href="https://inematds.github.io/loop-engineering/curso/trilha1/modulo-1-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/en/curso/trilha1/modulo-1-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/es/curso/trilha1/modulo-1-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha1/modulo-1-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha1/modulo-1-1.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha1/modulo-1-1.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -166,7 +166,7 @@
 <span class="font-bold text-lg hidden sm:inline">Loop Engineering</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html">
@@ -225,49 +225,49 @@
 </div>
 </div>
 </header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-inema-module="1-1" data-inema-track="1" id="conteudo">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHÉ-module="1-1" data-ARCKHÉ-track="1" id="conteudo">
 <!-- TOPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-1" id="topico-1">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🧠 The Origin of the Term</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t1-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t1-p1">
         Loop Engineering emerged as a way to describe something leading practitioners were already doing: <strong class="text-emerald-400">program automated loops that prompt AI agents</strong>, instead of having the human type each instruction manually. The term gained traction when figures like Boris Cherny (Head of Claude Code at Anthropic) and Peter Steinberger (creator of OpenClaw) began talking publicly about their workflows.
       </p>
 <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-emerald-400 mb-4 flex items-center">
 <span class="mr-2">💬</span> The Voices That Started the Movement
         </h3>
-<p class="text-neutral-300 mb-4" data-inema-block="m1-1-t1-p2">Two statements went viral and gave the term substance:</p>
+<p class="text-neutral-300 mb-4" data-ARCKHÉ-block="m1-1-t1-p2">Two statements went viral and gave the term substance:</p>
 <blockquote class="border-l-4 border-emerald-500/50 pl-4 mb-4 italic text-neutral-300">
           "I don’t write prompts for Claude anymore. I write loops, and the loops do the work. My job is to write loops."
           <footer class="text-emerald-400 text-sm mt-1 not-italic">— Boris Cherny, Head of Claude Code, Anthropic</footer>
 </blockquote>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-1-t1-p3">Peter Steinberger, from OpenClaw, expressed the same idea: he doesn't prompt agents directly, but designs the loops that do it for him. Cole Medin, analyzing these statements, observed that "loop engineering is kind of a buzzword, but also there are some really good takeaways when you dive into this".</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-t1-p3">Peter Steinberger, from OpenClaw, expressed the same idea: he doesn't prompt agents directly, but designs the loops that do it for him. Cole Medin, analyzing these statements, observed that "loop engineering is kind of a buzzword, but also there are some really good takeaways when you dive into this".</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
 <span class="mr-2">🎯</span> Reflection Point
         </h3>
-<p class="text-neutral-300" data-inema-block="m1-1-t1-p4">Cole Medin openly questions: "I don't even know if it deserves its own term." Loop Engineering isn’t a new technology. It’s a rearrangement of existing concepts (cron jobs, automation, orchestration) applied to AI agents. The real value is the conversation about how and when to let agents work autonomously.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m1-1-t1-p4">Cole Medin openly questions: "I don't even know if it deserves its own term." Loop Engineering isn’t a new technology. It’s a rearrangement of existing concepts (cron jobs, automation, orchestration) applied to AI agents. The real value is the conversation about how and when to let agents work autonomously.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-2" id="topico-2">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">⚙️ Practical Definition</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t2-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t2-p1">
         In practice, Loop Engineering is <strong class="text-emerald-400">design a system where automated loops prompt AI agents</strong>, freeing the human from sitting in front of the terminal typing each instruction. The human defines the strategy and criteria; the loop executes, validates, and iterates.
       </p>
 <!-- SVG DIAGRAM: prompting manual vs loop-driven -->
@@ -341,21 +341,21 @@
 </div>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-3" id="topico-3">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🔗 The Analogy with Cron Jobs</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t3-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t3-p1">
         If you've worked with servers, the concept of loop engineering will seem familiar. Think of a <strong class="text-emerald-400">cron job</strong>: a scheduler that wakes a script at a set interval. Loop Engineering is exactly that, but instead of running a bash script, you wake an AI agent with a prompt, and it decides what to do based on the current state of the world.
       </p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -403,25 +403,25 @@
         "Engenharia de loops é combinar ou criar um sistema em torno de todas essas coisas — rotinas, /loop — para que possamos fornecer um escopo de trabalho maior a um assistente de programaçêo com IA e fazer com que ele avance aos poucos."
         <footer class="text-emerald-400 text-sm mt-1 not-italic">— Cole Medin</footer>
 </blockquote>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t3-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t3-p2">
         The key word here is <strong class="text-emerald-400">incrementally</strong>. The central point of a loop is that the agent never tries to solve everything at once. It takes one task per cycle, executes it, validates it, and the loop moves forward. As Cole says: "we never want to have a coding agent try to handle too much at once, or it will get completely overwhelmed."
       </p>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-4" id="topico-4">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">👤 The Personas: Boris, Peter, and Cole</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t4-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t4-p1">
         To understand Loop Engineering, it's helpful to know who's behind the conversation. Each person brings a different perspective, and the differences matter.
       </p>
 <div class="space-y-4 mb-6">
@@ -430,45 +430,45 @@
 <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-bold rounded-full">BORIS CHERNY</span>
 <span class="text-neutral-500 text-sm">Head of Claude Code, Anthropic</span>
 </div>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-1-t4-p2">Manages tens of thousands of agents per day, according to him. Uses /loop, /goal and /routines in Claude Code as fundamental building blocks. He is the one who most promotes the concept of "I don't prompt anymore; I write loops." It's important to note that he works at Anthropic—and has access to computing resources most people don't.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-t4-p2">Manages tens of thousands of agents per day, according to him. Uses /loop, /goal and /routines in Claude Code as fundamental building blocks. He is the one who most promotes the concept of "I don't prompt anymore; I write loops." It's important to note that he works at Anthropic—and has access to computing resources most people don't.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <div class="flex items-center space-x-3 mb-3">
 <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-bold rounded-full">PETER STEINBERGER</span>
 <span class="text-neutral-500 text-sm">Creator of OpenClaw</span>
 </div>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-1-t4-p3">Another vocal advocate of autonomous loops. He runs loops that prompt Claude for him, delegating almost the entire development cycle. Cole Medin notes that he operates with "pretty much an infinite budget," which makes his setup difficult for most developers to replicate.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-t4-p3">Another vocal advocate of autonomous loops. He runs loops that prompt Claude for him, delegating almost the entire development cycle. Cole Medin notes that he operates with "pretty much an infinite budget," which makes his setup difficult for most developers to replicate.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <div class="flex items-center space-x-3 mb-3">
 <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-bold rounded-full">COLE MEDIN</span>
 <span class="text-neutral-500 text-sm">Creator of Archon</span>
 </div>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-1-t4-p4">A more skeptical and practical position. Recognizes the value of loops but asks: “I am not sold on this idea right now.” Built his own approach with deterministic workflows in Archon, where the human controls the process instead of delegating it entirely to the agent. His focus is cost, reliability, and observability.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-t4-p4">A more skeptical and practical position. Recognizes the value of loops but asks: “I am not sold on this idea right now.” Built his own approach with deterministic workflows in Archon, where the human controls the process instead of delegating it entirely to the agent. His focus is cost, reliability, and observability.</p>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/40 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
 <span class="mr-2">🤔</span> Reflection Point
         </h3>
-<p class="text-neutral-300" data-inema-block="m1-1-t4-p5">Cole Medin raises a direct question about Boris: "Boris Cherny says that there are days he manages tens of thousands of AI agents at once. Like really, is that actually practical? Is that going to scale?" Then he challenges the claim: "I mean, maybe that does explain some of the bugs we have in Claude Code." It’s an honest perspective — the people promoting loop engineering have access to resources most people don’t.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m1-1-t4-p5">Cole Medin raises a direct question about Boris: "Boris Cherny says that there are days he manages tens of thousands of AI agents at once. Like really, is that actually practical? Is that going to scale?" Then he challenges the claim: "I mean, maybe that does explain some of the bugs we have in Claude Code." It’s an honest perspective — the people promoting loop engineering have access to resources most people don’t.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-5" id="topico-5">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">📊 The Basic Flow of a Loop</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t5-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t5-p1">
         At the simplest level, Cole Medin demonstrated loop engineering with a straightforward example in Claude Code. He provided a specification document (plan.md) with numbered tasks and asked Claude Code to use the loop skill.
       </p>
 <blockquote class="border-l-4 border-emerald-500/50 pl-4 mb-6 italic text-neutral-300">
@@ -516,52 +516,52 @@
 <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center">
 <span class="mr-2">📌</span> The Central Point
         </h3>
-<p class="text-neutral-300" data-inema-block="m1-1-t5-p2">Claude Code acts as both orchestrator and worker here. It sets up the loop, writes the loop prompt, and executes the tasks. For simple cases, this works. For more complex systems, as we'll see in Module 1.3, separating the orchestrator from the workers becomes essential.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m1-1-t5-p2">Claude Code acts as both orchestrator and worker here. It sets up the loop, writes the loop prompt, and executes the tasks. For simple cases, this works. For more complex systems, as we'll see in Module 1.3, separating the orchestrator from the workers becomes essential.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-1-1#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-1#topico-6" id="topico-6">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">❓ Questions</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-1-t6-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t6-p1">
         Before diving into the technical blocks, it’s worth pausing to raise legitimate questions that Cole Medin himself asks about the concept.
       </p>
 <div class="space-y-4 mb-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-emerald-400 mb-2">Does Loop Engineering deserve to be its own term?</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-1-t6-p2">Cole Medin is direct: "I don't even know if it deserves its own term." The idea of automating tasks with loops and schedulers has been around for decades. What changes is the LLM at the center. But the mechanics — cron, wake up, execute, sleep — are the same as ever. Calling this "engineering" is, at the very least, generous.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-t6-p2">Cole Medin is direct: "I don't even know if it deserves its own term." The idea of automating tasks with loops and schedulers has been around for decades. What changes is the LLM at the center. But the mechanics — cron, wake up, execute, sleep — are the same as ever. Calling this "engineering" is, at the very least, generous.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-emerald-400 mb-2">Who actually benefits?</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-1-t6-p3">The biggest advocates of loop engineering are people with access to massive budgets and cutting-edge infrastructure. Boris has Anthropic's resources. Peter operates with a practically unlimited budget. The real question is: does this scale for a solo dev or a startup with a tight budget?</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-t6-p3">The biggest advocates of loop engineering are people with access to massive budgets and cutting-edge infrastructure. Boris has Anthropic's resources. Peter operates with a practically unlimited budget. The real question is: does this scale for a solo dev or a startup with a tight budget?</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-emerald-400 mb-2">Autonomy vs. Quality: Is it a trade-off?</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-1-t6-p4">Cole sums it up: "there is no way you're gonna convince me that loop engineering is the way to get the best results possible with AI coding assistance." More autonomy means less control. Less control means more risk of poor results. Module 2.2 will examine this in detail.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-1-t6-p4">Cole sums it up: "there is no way you're gonna convince me that loop engineering is the way to get the best results possible with AI coding assistance." More autonomy means less control. Less control means more risk of poor results. Module 2.2 will examine this in detail.</p>
 </div>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center">
 <span class="mr-2">⚠️</span> Cole's Challenge
         </h3>
-<p class="text-neutral-300" data-inema-block="m1-1-t6-p5">At the end of the analysis, Cole sums it up: "I would just fold loop engineering into harness engineering. It doesn't quite deserve its own buzzword. But there are some good ideas here." The idea isn't dismissed—it is repositioned. Loop Engineering is an ingredient, not a complete meal.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m1-1-t6-p5">At the end of the analysis, Cole sums it up: "I would just fold loop engineering into harness engineering. It doesn't quite deserve its own buzzword. But there are some good ideas here." The idea isn't dismissed—it is repositioned. Loop Engineering is an ingredient, not a complete meal.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Mark as read</span>
-<span class="inema-label-done hidden">Read</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Mark as read</span>
+<span class="ARCKHÉ-label-done hidden">Read</span>
 </button>
 </div>
 </section>
@@ -607,7 +607,7 @@
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Loop Engineering — Agents in Continuous Loops | <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> | 2026</p>
+<p>Loop Engineering — Agents in Continuous Loops | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> | 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS -->
@@ -653,8 +653,8 @@
   </script>
 <script src="../../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
     }
   </script>
 </body>

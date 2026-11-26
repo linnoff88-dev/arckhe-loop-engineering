@@ -4,11 +4,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="loop-engineering" name="inema-course"/>
+<meta content="loop-engineering" name="ARCKHÉ-course"/>
 <title>Modulo 3.2 — Workflows Deterministicos com Archon | Loop Engineering</title>
 <!-- Anti-FOUC (PRIMEIRO no head, antes de tudo) -->
 <script>
-  (function(){try{var h=document.documentElement,D={theme:'inema-dark',font:'inter',fontScale:100,lineWidth:68,leading:1.7,accent:'emerald'};function c(o){var r={};for(var x in o)r[x]=o[x];return r}var p=c(D);try{var raw=localStorage.getItem('inema.prefs');if(raw){var j=JSON.parse(raw);if(j&&typeof j==='object')for(var k in D)if(j[k]!=null)p[k]=j[k]}else{var l=localStorage.getItem('theme');if(l==='light')p.theme='claro';else if(l==='dark')p.theme='inema-dark'}}catch(e){p=c(D)}var T={'inema-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'}};var t=T[p.theme]||T['inema-dark'];if(t.dark===true)h.classList.add('dark');else if(t.dark===false)h.classList.remove('dark');if(t.attr)h.setAttribute('data-theme',t.attr);else h.removeAttribute('data-theme');h.style.colorScheme=t.cs?t.cs:(h.classList.contains('dark')?'dark':'light');h.setAttribute('data-font',p.font||'inter');h.setAttribute('data-accent',p.accent||'emerald');var s=h.style,sc=+p.fontScale||100;s.setProperty('--inema-font-scale',(sc/100).toString());s.setProperty('font-size',sc+'%');s.setProperty('--measure',(+p.lineWidth||68)+'ch');s.setProperty('--lh-body',(+p.leading||1.7).toString());var fam=p.font==='system'?'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif':p.font==='leitura'?'"Atkinson Hyperlegible","Inter",system-ui,sans-serif':'"Inter",system-ui,sans-serif';s.setProperty('--font-body',fam);var A={emerald:[152,76,45],blue:[217,91,60],purple:[258,90,66],amber:[38,92,50],teal:[174,72,41],rose:[350,89,60]};var a=A[p.accent]||A.emerald;s.setProperty('--accent-h',a[0]+'');s.setProperty('--accent-s',a[1]+'%');s.setProperty('--accent-l',a[2]+'%');s.setProperty('--accent','hsl('+a[0]+' '+a[1]+'% '+a[2]+'%)')}catch(err){try{document.documentElement.classList.add('dark');document.documentElement.style.colorScheme='dark'}catch(e){}}})();
+  (function(){try{var h=document.documentElement,D={theme:'ARCKHÉ-dark',font:'inter',fontScale:100,lineWidth:68,leading:1.7,accent:'emerald'};function c(o){var r={};for(var x in o)r[x]=o[x];return r}var p=c(D);try{var raw=localStorage.getItem('ARCKHÉ.prefs');if(raw){var j=JSON.parse(raw);if(j&&typeof j==='object')for(var k in D)if(j[k]!=null)p[k]=j[k]}else{var l=localStorage.getItem('theme');if(l==='light')p.theme='claro';else if(l==='dark')p.theme='ARCKHÉ-dark'}}catch(e){p=c(D)}var T={'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'}};var t=T[p.theme]||T['ARCKHÉ-dark'];if(t.dark===true)h.classList.add('dark');else if(t.dark===false)h.classList.remove('dark');if(t.attr)h.setAttribute('data-theme',t.attr);else h.removeAttribute('data-theme');h.style.colorScheme=t.cs?t.cs:(h.classList.contains('dark')?'dark':'light');h.setAttribute('data-font',p.font||'inter');h.setAttribute('data-accent',p.accent||'emerald');var s=h.style,sc=+p.fontScale||100;s.setProperty('--ARCKHÉ-font-scale',(sc/100).toString());s.setProperty('font-size',sc+'%');s.setProperty('--measure',(+p.lineWidth||68)+'ch');s.setProperty('--lh-body',(+p.leading||1.7).toString());var fam=p.font==='system'?'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif':p.font==='leitura'?'"Atkinson Hyperlegible","Inter",system-ui,sans-serif':'"Inter",system-ui,sans-serif';s.setProperty('--font-body',fam);var A={emerald:[152,76,45],blue:[217,91,60],purple:[258,90,66],amber:[38,92,50],teal:[174,72,41],rose:[350,89,60]};var a=A[p.accent]||A.emerald;s.setProperty('--accent-h',a[0]+'');s.setProperty('--accent-s',a[1]+'%');s.setProperty('--accent-l',a[2]+'%');s.setProperty('--accent','hsl('+a[0]+' '+a[1]+'% '+a[2]+'%)')}catch(err){try{document.documentElement.classList.add('dark');document.documentElement.style.colorScheme='dark'}catch(e){}}})();
   </script>
 <link href="../../assets/learn.css" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
@@ -27,7 +27,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Manifesto do curso (OBRIGATORIO em toda pagina) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "loop-engineering",
     "tracks": [
@@ -119,8 +119,8 @@
     /* Scroll margin for sticky nav */
     [id^="topico-"] { scroll-margin-top: 4rem; }
   </style>
-<link href="https://inematds.github.io/loop-engineering/curso/trilha3/modulo-3-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/en/curso/trilha3/modulo-3-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/es/curso/trilha3/modulo-3-2.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-3-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha3/modulo-3-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha3/modulo-3-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha3/modulo-3-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha3/modulo-3-2.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha3/modulo-3-2.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-3-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha3/modulo-3-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha3/modulo-3-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -131,7 +131,7 @@
 <span class="font-bold text-lg hidden sm:inline">Loop Engineering</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html">
@@ -190,7 +190,7 @@
 </div>
 </div>
 </header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-inema-module="3-2" data-inema-track="3" id="conteudo">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHÉ-module="3-2" data-ARCKHÉ-track="3" id="conteudo">
 <!-- SVG FUTURISTA: Workflow pipeline -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-12 overflow-hidden">
 <svg aria-label="Workflow Archon: Input entra no pipeline deterministico com steps de Extract, Classify, Research, Implement e Validate, cada um com modelo diferente" class="w-full h-auto" role="img" viewbox="0 0 1000 300">
@@ -249,12 +249,12 @@
 </svg>
 </div>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-3-2#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-1" id="topico-1">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🎯 O Que E Archon e Por Que Existe</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t1-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t1-p1">
         Archon e o "harness builder" criado por Cole Medin. Ele permite construir workflows que orquestram multiplas sessoes de coding agent para tarefas maiores. A diferenca fundamental para o loop puro: <strong class="text-purple-400">voce define o processo, nao o agente.</strong> No loop puro, o agente decide como progredir. No Archon, voce determina os steps e o agente executa dentro de cada um.
       </p>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
@@ -284,23 +284,23 @@
 </div>
 </div>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t1-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t1-p2">
         Cole Medin explica a motivacao direta: <strong class="text-purple-400">"Archon is my harness builder, allows us to build workflows that orchestrate many coding agent sessions to handle larger tasks."</strong> A ideia e que um workflow como "fix GitHub issue" nao precisa de um agente decidindo como resolver. O processo e conhecido: extrair contexto, classificar, pesquisar, implementar, validar, criar PR.
       </p>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span>
-<span class="inema-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">○</span>
+<span class="ARCKHÉ-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-3-2#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-2" id="topico-2">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">🔧 Anatomia do Workflow "Fix GitHub Issue"</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t2-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t2-p1">
         O workflow mais classico do Archon e o "Fix GitHub Issue". Cole Medin usa isso no dia a dia: <strong class="text-purple-400">"Most of the input for my day-to-day work is issues in a repo. Either I'll create them or someone else will."</strong> O workflow segue uma sequencia fixa de steps, cada um com um papel especifico.
       </p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -345,23 +345,23 @@
 </div>
 </div>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t2-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t2-p2">
         O ponto chave: <strong class="text-purple-400">"We're not having the agent drive the entire thing. It's more deterministic because we set up the process in this workflow file."</strong> Voce define os steps, o Archon garante que eles executam na ordem certa, e cada step roda numa sessao isolada com o modelo ideal para aquela tarefa.
       </p>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span>
-<span class="inema-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">○</span>
+<span class="ARCKHÉ-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-3-2#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-3" id="topico-3">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">🧩 A Filosofia: Tirar Decisao do Agente</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t3-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t3-p1">
         O principio fundamental do Archon e contra-intuitivo: <strong class="text-purple-400">quanto menos o agente decide, melhor o resultado.</strong> Cole Medin deixa isso explicito: <strong class="text-purple-400">"We want to actually take the decision away from the coding agent as much as we can, only applying the reasoning of the LLM when we actually need it to write the code."</strong>
 </p>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
@@ -419,22 +419,22 @@ async function classifyIssue(context: IssueContext): Promise&lt;"bug" | "feature
 </div>
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-purple-400 mb-3">🤔 Ponto de Reflexao</h3>
-<p class="text-neutral-300" data-inema-block="m3-2-t3-p2">Essa filosofia e o que Cole Medin chama de "layering on top of loop engineering". Voce nao abandona loops completamente. Voce pega as partes boas (automacao, ciclos) e adiciona uma camada de controle humano. O resultado: menos token waste, mais previsibilidade, mais facil de debuggar.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m3-2-t3-p2">Essa filosofia e o que Cole Medin chama de "layering on top of loop engineering". Voce nao abandona loops completamente. Voce pega as partes boas (automacao, ciclos) e adiciona uma camada de controle humano. O resultado: menos token waste, mais previsibilidade, mais facil de debuggar.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span>
-<span class="inema-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">○</span>
+<span class="ARCKHÉ-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-3-2#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-4" id="topico-4">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">🔀 Mix de Modelos: O Modelo Certo para Cada Step</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t4-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t4-p1">
         Um dos maiores problemas do loop puro com /loop ou /routines: <strong class="text-purple-400">"You're just using one model for pretty much everything. That's part of the problem of why it's so expensive."</strong> No Archon, cada node do workflow pode usar um modelo diferente, otimizando custo sem perder qualidade.
       </p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -486,29 +486,29 @@ async function classifyIssue(context: IssueContext): Promise&lt;"bug" | "feature
 </table>
 </div>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t4-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t4-p2">
         Cole Medin demonstra na pratica: <strong class="text-purple-400">"We can use Cloud Code for the implementation. And then we can use Codex for the review. And then for all of our context loading and exploration up front, we can use a smaller model like Kimi K 2.7."</strong> Isso e model routing aplicado a workflows de agentes.
       </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
 <span class="mr-2">💡</span> Dica Pratica
         </h3>
-<p class="text-neutral-300" data-inema-block="m3-2-t4-p3">A regra geral: use modelos baratos para decisoes, modelos fortes para criacao. Classificar uma issue como bug vs feature nao precisa de Opus. Escrever o fix precisa. A diferenca de custo pode ser 10x ou mais por step.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m3-2-t4-p3">A regra geral: use modelos baratos para decisoes, modelos fortes para criacao. Classificar uma issue como bug vs feature nao precisa de Opus. Escrever o fix precisa. A diferenca de custo pode ser 10x ou mais por step.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span>
-<span class="inema-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">○</span>
+<span class="ARCKHÉ-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-3-2#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-5" id="topico-5">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">💾 Durabilidade: State em Postgres/Neon</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t5-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t5-p1">
         Uma das maiores fraquezas do loop basico: se o terminal fecha, voce perde tudo. Archon resolve isso guardando todo o estado num banco externo. <strong class="text-purple-400">"All of the loops that we run and the different events and logs, I'm storing this here so we can always resume a workflow later on."</strong>
 </p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -550,27 +550,27 @@ CREATE TABLE conversation_logs (
   created_at  TIMESTAMPTZ DEFAULT now()
 );</code></pre>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t5-p2">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t5-p2">
         Cole Medin enfatiza: <strong class="text-purple-400">"I have all my conversations, the code bases that I'm operating on with Archon, everything is durable and it's super easy to resume any work that I'm doing."</strong> Com o estado num banco Postgres (Neon), voce pode: retomar workflows apos crash, ver o historico completo de cada run, e auditar decisoes do agente.
       </p>
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-purple-400 mb-3">🤔 Ponto de Reflexao</h3>
-<p class="text-neutral-300" data-inema-block="m3-2-t5-p3">Durabilidade nao e um "nice to have" para loops serios. E um requisito. Se voce esta rodando um loop de 2 horas e a maquina reinicia no minuto 90, sem state externo voce perdeu tudo. Com Neon/Postgres, voce retoma do step exato onde parou. O custo de setup (uma hora de config) se paga na primeira falha que voce NAO perde.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m3-2-t5-p3">Durabilidade nao e um "nice to have" para loops serios. E um requisito. Se voce esta rodando um loop de 2 horas e a maquina reinicia no minuto 90, sem state externo voce perdeu tudo. Com Neon/Postgres, voce retoma do step exato onde parou. O custo de setup (uma hora de config) se paga na primeira falha que voce NAO perde.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span>
-<span class="inema-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">○</span>
+<span class="ARCKHÉ-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-3-2#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-6" id="topico-6">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">❓ Questionamentos: Archon vs Loop Puro</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-2-t6-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t6-p1">
         Archon resolve muitos problemas do loop puro, mas introduz sua propria complexidade. Vale a pena ser honesto sobre os trade-offs.
       </p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -578,7 +578,7 @@ CREATE TABLE conversation_logs (
 <div class="space-y-4">
 <div class="bg-dark-700/50 rounded-lg p-4">
 <p class="text-purple-400 font-semibold mb-2">Quando o workflow deterministico limita demais?</p>
-<p class="text-neutral-300 text-sm" data-inema-block="m3-2-t6-p2">Se voce define todos os steps rigidamente, perde a capacidade do agente de improvisar. Para tarefas exploratórias (provas de conceito, ideacao), o loop puro pode ser mais adequado porque o agente precisa de liberdade para descobrir caminhos inesperados.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m3-2-t6-p2">Se voce define todos os steps rigidamente, perde a capacidade do agente de improvisar. Para tarefas exploratórias (provas de conceito, ideacao), o loop puro pode ser mais adequado porque o agente precisa de liberdade para descobrir caminhos inesperados.</p>
 </div>
 <div class="bg-dark-700/50 rounded-lg p-4">
 <p class="text-purple-400 font-semibold mb-2">O overhead de engenharia compensa?</p>
@@ -586,7 +586,7 @@ CREATE TABLE conversation_logs (
 </div>
 <div class="bg-dark-700/50 rounded-lg p-4">
 <p class="text-purple-400 font-semibold mb-2">Harness engineering vs loop engineering?</p>
-<p class="text-neutral-300 text-sm" data-inema-block="m3-2-t6-p3">Cole Medin propoe: <em>"I would just fold loop engineering into harness engineering. It doesn't quite deserve its own buzzword."</em> A visao e que loops sao uma ferramenta dentro de um harness maior, nao um paradigma separado. O harness define o processo, os loops executam partes dele.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m3-2-t6-p3">Cole Medin propoe: <em>"I would just fold loop engineering into harness engineering. It doesn't quite deserve its own buzzword."</em> A visao e que loops sao uma ferramenta dentro de um harness maior, nao um paradigma separado. O harness define o processo, os loops executam partes dele.</p>
 </div>
 </div>
 </div>
@@ -601,9 +601,9 @@ CREATE TABLE conversation_logs (
 </ul>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-read-icon">○</span>
-<span class="inema-read-label">Marcar como lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-read-icon">○</span>
+<span class="ARCKHÉ-read-label">Marcar como lido</span>
 </button>
 </div>
 </section>
@@ -648,7 +648,7 @@ CREATE TABLE conversation_logs (
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Loop Engineering — Agentes em Loop Continuo - 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a></p>
+<p>Loop Engineering — Agentes em Loop Continuo - 2026 | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p>
 </div>
 </footer>
 <script>
@@ -671,8 +671,8 @@ CREATE TABLE conversation_logs (
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
     }
   </script>
 </body>

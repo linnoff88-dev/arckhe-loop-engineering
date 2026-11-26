@@ -4,18 +4,18 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="loop-engineering" name="inema-course"/>
+<meta content="loop-engineering" name="ARCKHÉ-course"/>
 <title>Modulo 1.3 — Arquitetura Orchestrator-Workers | Loop Engineering</title>
 <!-- ANTI-FOUC: script bloqueante ANTES de tudo -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') {
@@ -24,17 +24,17 @@
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr);
@@ -44,7 +44,7 @@
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style;
       var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -78,7 +78,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
 <!-- Manifesto do curso -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "loop-engineering",
     "tracks": [
@@ -166,8 +166,8 @@
     /* Scroll margin for sticky nav */
     [id^="topico-"] { scroll-margin-top: 4rem; }
   </style>
-<link href="https://inematds.github.io/loop-engineering/curso/trilha1/modulo-1-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/en/curso/trilha1/modulo-1-3.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/loop-engineering/es/curso/trilha1/modulo-1-3.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha1/modulo-1-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha1/modulo-1-3.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha1/modulo-1-3.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -178,7 +178,7 @@
 <span class="font-bold text-lg hidden sm:inline">Loop Engineering</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html">
@@ -245,14 +245,14 @@
 </div>
 </div>
 </header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-inema-module="1-3" data-inema-track="1" id="conteudo">
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-ARCKHÉ-module="1-3" data-ARCKHÉ-track="1" id="conteudo">
 <!-- TOPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-1-3#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-1" id="topico-1">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
 <h2 class="text-2xl font-bold">🎭 O Orchestrator: Cerebro do Sistema</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-3-t1-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t1-p1">
         No centro de qualquer sistema de loop engineering escalavel esta o <strong class="text-emerald-400">orchestrator</strong>: a sessao de agente que le a especificacao, decide quais tarefas executar, dispara workers e valida resultados. Ele nao escreve codigo diretamente. Seu papel e raciocinar sobre o estado do projeto e tomar decisoes de alto nivel sobre o que fazer a seguir.
       </p>
 <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-6 mb-6">
@@ -263,7 +263,7 @@
           "We send in our initial spec to the orchestrator and it has to reason about that and then figure out how many workers to spin off. And then it has to prompt them all. They each spend tokens and then the results come back."
           <footer class="text-emerald-400 text-sm mt-1 not-italic">— Cole Medin</footer>
 </blockquote>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-3-t1-p2">O orchestrator funciona como um gerente de projeto automatizado. Ele recebe a spec (o que precisa ser feito), analisa o estado atual do repositorio, e decide: quantos workers preciso? Quais tarefas atribuir a cada um? Em que ordem? Quando o trabalho esta completo? Cada uma dessas decisoes custa tokens de reasoning, e e por isso que o orchestrator e uma das partes mais caras do sistema.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-3-t1-p2">O orchestrator funciona como um gerente de projeto automatizado. Ele recebe a spec (o que precisa ser feito), analisa o estado atual do repositorio, e decide: quantos workers preciso? Quais tarefas atribuir a cada um? Em que ordem? Quando o trabalho esta completo? Cada uma dessas decisoes custa tokens de reasoning, e e por isso que o orchestrator e uma das partes mais caras do sistema.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
 <h3 class="text-lg font-semibold text-emerald-400 mb-4">📋 Responsabilidades do Orchestrator</h3>
@@ -276,21 +276,21 @@
 </ul>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-1-3#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-2" id="topico-2">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
 <h2 class="text-2xl font-bold">⚙ Workers: Execucao Paralela e Isolada</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-3-t2-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t2-p1">
         Workers sao <strong class="text-emerald-400">sessoes de agente independentes</strong> que recebem uma tarefa especifica do orchestrator e a executam. Cada worker opera em isolamento, idealmente numa worktree propria do git, para que multiplos workers possam trabalhar em paralelo sem pisar no codigo um do outro.
       </p>
 <!-- SVG DIAGRAM: orchestrator -> workers flow -->
@@ -375,21 +375,21 @@
 </div>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-1-3#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-3" id="topico-3">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
 <h2 class="text-2xl font-bold">💾 State Management Externo</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-3-t3-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t3-p1">
         Um dos problemas mais criticos de loops longos e o <strong class="text-emerald-400">context bloat</strong>: conforme o agente acumula historico de conversacao, a janela de contexto do LLM fica sobrecarregada e a qualidade das respostas degrada. A solucao arquitetural e mover o estado para fora do LLM, usando um <strong class="text-emerald-400">banco de dados externo</strong> como fonte de verdade.
       </p>
 <blockquote class="border-l-4 border-emerald-500/50 pl-4 mb-6 italic text-neutral-300">
@@ -431,21 +431,21 @@
 </div>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-1-3#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-4" id="topico-4">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
 <h2 class="text-2xl font-bold">🔄 O Fluxo Completo de um Round</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-3-t4-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t4-p1">
         Um "round" e a <strong class="text-emerald-400">unidade de trabalho</strong> do sistema orchestrator-workers. Cada round segue um fluxo previsivel: o orchestrator le o estado, decide o que fazer, despacha workers, coleta resultados, e avalia se precisa de mais rounds. Esse ciclo se repete ate que o goal seja atingido ou o budget se esgote.
       </p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
@@ -503,21 +503,21 @@
         <footer class="text-emerald-400 text-sm mt-1 not-italic">— Cole Medin, sobre o dashboard</footer>
 </blockquote>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-1-3#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-5" id="topico-5">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
 <h2 class="text-2xl font-bold">🛡 Durabilidade e Resumabilidade</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-3-t5-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t5-p1">
         Loops longos inevitavelmente falham em algum ponto. A maquina pode reiniciar, a sessao do agente pode cair, a rede pode oscilar. A questao nao e <em>se</em> vai falhar, mas <em>quando</em>. <strong class="text-emerald-400">Durabilidade</strong> significa que o sistema pode retomar de onde parou, sem perder o trabalho ja feito. E isso so e possivel com state management externo.
       </p>
 <blockquote class="border-l-4 border-emerald-500/50 pl-4 mb-6 italic text-neutral-300">
@@ -545,52 +545,52 @@
 <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
 <span class="mr-2">🎯</span> Ponto de Reflexao
         </h3>
-<p class="text-neutral-300" data-inema-block="m1-3-t5-p2">Sem durabilidade, loop engineering e um brinquedo caro. Imagine rodar um loop por 4 horas, gastar centenas de milhares de tokens, e perder tudo porque o terminal fechou. O state externo transforma um experimento fragil num sistema que pode rodar de verdade. Cole Medin construiu exatamente isso no seu dashboard: "I'm storing this here so we can always resume a workflow later on."</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m1-3-t5-p2">Sem durabilidade, loop engineering e um brinquedo caro. Imagine rodar um loop por 4 horas, gastar centenas de milhares de tokens, e perder tudo porque o terminal fechou. O state externo transforma um experimento fragil num sistema que pode rodar de verdade. Cole Medin construiu exatamente isso no seu dashboard: "I'm storing this here so we can always resume a workflow later on."</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-1-3#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-6" id="topico-6">
 <div class="flex items-center space-x-4 mb-6">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
 <h2 class="text-2xl font-bold">❓ Questionamentos</h2>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-3-t6-p1">
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t6-p1">
         A arquitetura orchestrator-workers e elegante no papel, mas levanta questoes praticas serias. Cole Medin, apesar de construir um dashboard funcional para isso, mantem uma posicao cautelosa.
       </p>
 <div class="space-y-4 mb-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-emerald-400 mb-2">O orchestrator e um gargalo de custo?</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-3-t6-p2">Cada decisao do orchestrator consome tokens de reasoning. Quanto mais complexa a spec, mais tokens para planejar rounds e avaliar resultados. Cole mostrou que uma unica run de um app simples consumiu mais de 1 milhao de tokens. A pergunta e: vale a pena pagar esse preco de reasoning para cada decisao, ou um workflow deterministico (como o Archon) resolve melhor?</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-3-t6-p2">Cada decisao do orchestrator consome tokens de reasoning. Quanto mais complexa a spec, mais tokens para planejar rounds e avaliar resultados. Cole mostrou que uma unica run de um app simples consumiu mais de 1 milhao de tokens. A pergunta e: vale a pena pagar esse preco de reasoning para cada decisao, ou um workflow deterministico (como o Archon) resolve melhor?</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-emerald-400 mb-2">Quem valida o validador?</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-3-t6-p3">O orchestrator valida os resultados dos workers, mas o orchestrator tambem e um LLM. Se ele alucinara na validacao (aceitando resultado ruim como bom), o erro se propaga para os rounds seguintes. Sem human-in-the-loop em pontos criticos, a auto-validacao pode ser um ponto cego perigoso.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-3-t6-p3">O orchestrator valida os resultados dos workers, mas o orchestrator tambem e um LLM. Se ele alucinara na validacao (aceitando resultado ruim como bom), o erro se propaga para os rounds seguintes. Sem human-in-the-loop em pontos criticos, a auto-validacao pode ser um ponto cego perigoso.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <h4 class="font-semibold text-emerald-400 mb-2">Determinismo vs. autonomia: onde esta o equilibrio?</h4>
-<p class="text-neutral-300 text-sm" data-inema-block="m1-3-t6-p4">Cole Medin prefere workflows deterministicos onde o humano define os steps. Boris Cherny prefere autonomia total com o orchestrator decidindo tudo. A verdade provavelmente esta no meio: usar o orchestrator para decisoes de roteamento e modelo para codigo, mas nao para definir o processo inteiro.</p>
+<p class="text-neutral-300 text-sm" data-ARCKHÉ-block="m1-3-t6-p4">Cole Medin prefere workflows deterministicos onde o humano define os steps. Boris Cherny prefere autonomia total com o orchestrator decidindo tudo. A verdade provavelmente esta no meio: usar o orchestrator para decisoes de roteamento e modelo para codigo, mas nao para definir o processo inteiro.</p>
 </div>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
 <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center">
 <span class="mr-2">⚠</span> A Provocacao de Cole
         </h3>
-<p class="text-neutral-300" data-inema-block="m1-3-t6-p5">Cole sintetiza sua posicao sobre dar autonomia total ao orchestrator: "We want to actually take the decision away from the coding agent as much as we can, only applying the reasoning of the LLM when we actually need it to write the code." O orchestrator deve ser o minimo necessario, nao o maximo possivel.</p>
+<p class="text-neutral-300" data-ARCKHÉ-block="m1-3-t6-p5">Cole sintetiza sua posicao sobre dar autonomia total ao orchestrator: "We want to actually take the decision away from the coding agent as much as we can, only applying the reasoning of the LLM when we actually need it to write the code." O orchestrator deve ser o minimo necessario, nao o maximo possivel.</p>
 </div>
 <div class="flex justify-start">
-<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">☐</span>
-<span aria-hidden="true" class="inema-ico-done hidden">☑</span>
-<span class="inema-label-todo">Marcar como lido</span>
-<span class="inema-label-done hidden">Lido</span>
+<button aria-pressed="false" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm bg-dark-700 hover:bg-dark-600 transition-colors text-neutral-400 hover:text-emerald-400" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">☐</span>
+<span aria-hidden="true" class="ARCKHÉ-ico-done hidden">☑</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span>
+<span class="ARCKHÉ-label-done hidden">Lido</span>
 </button>
 </div>
 </section>
@@ -636,7 +636,7 @@
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Loop Engineering — Agentes em Loop Continuo | <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> | 2026</p>
+<p>Loop Engineering — Agentes em Loop Continuo | <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> | 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS -->
@@ -682,8 +682,8 @@
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
     }
   </script>
 </body>
