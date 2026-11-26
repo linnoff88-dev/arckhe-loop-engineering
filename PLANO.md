@@ -1,12 +1,12 @@
 # Loop Engineering — Plano do Curso
 
-## Visão Geral
-Curso introdutório à abordagem "Loop Engineering" para sistemas de IA, baseado no vídeo de Cole Medin e pesquisas complementares. Apresenta fundamentos, vantagens, desvantagens honestas, implementação técnica e exemplos práticos com prompts prontos.
+## Visêo Geral
+Curso introdutório à abordagem "Loop Engineering" para sistemas de IA, baseado no vídeo de Cole Medin e pesquisas complementares. Apresenta fundamentos, vantagens, desvantagens honestas, implementaçêo técnica e exemplos práticos com prompts prontos.
 
 ## Fonte Principal
 - Vídeo: "The Creators of Claude Code and OpenClaw don't Prompt Their Agents Anymore?!" — Cole Medin (24 min)
 - Canal: Cole Medin (YouTube)
-- Transcrição completa em: /home/nmaldaner/projetos/openpcbot/out/1439d183_transcript.txt
+- Transcriçêo completa em: /home/nmaldaner/projetos/openpcbot/out/1439d183_transcript.txt
 
 ## Personas-chave citadas
 - **Boris Cherny** — Head of Claude Code, Anthropic. "I don't prompt Claude anymore. I write loops and the loops do the work."
@@ -19,14 +19,14 @@ Curso introdutório à abordagem "Loop Engineering" para sistemas de IA, baseado
 O que é, de onde veio, por que está virando buzzword.
 
 - **Módulo 1.1 — O Que É Loop Engineering**
-  - Definição: sistema onde loops automatizados fazem o prompting dos agentes, não o humano
+  - Definiçêo: sistema onde loops automatizados fazem o prompting dos agentes, nêo o humano
   - Diferença entre "prompting manual" vs "loop-driven"
   - Citações de Boris Cherny e Peter Steinberger
   - Analogia: cron jobs + agentes de IA
 
 - **Módulo 1.2 — Os Blocos Fundamentais**
-  - /slash loop — intervalos de execução (ex: a cada 5 min)
-  - /slash goal — critério de conclusão, agente trabalha até "done"
+  - /slash loop — intervalos de execuçêo (ex: a cada 5 min)
+  - /slash goal — critério de conclusêo, agente trabalha até "done"
   - /slash routines — jobs agendados (ex: a cada hora, revisar spec)
   - Como se combinam para formar um sistema de loop
 
@@ -36,32 +36,32 @@ O que é, de onde veio, por que está virando buzzword.
   - State management via banco externo (Postgres/Neon)
   - Durabilidade e resumabilidade
 
-### Trilha 2 — Vantagens vs Desvantagens (Visão Honesta)
+### Trilha 2 — Vantagens vs Desvantagens (Visêo Honesta)
 Análise crítica sem hype.
 
 - **Módulo 2.1 — Vantagens Reais**
-  - Autonomia: agentes trabalham 24/7 sem intervenção
+  - Autonomia: agentes trabalham 24/7 sem intervençêo
   - Escala: processar múltiplas tarefas em paralelo (worktrees)
   - Composabilidade: orquestrador + workers = sistema modular
-  - Exploração: excelente para provas de conceito e ideação
+  - Exploraçêo: excelente para provas de conceito e ideaçêo
   - Incrementalidade: tarefas grandes divididas em ciclos pequenos
 
 - **Módulo 2.2 — Desvantagens e Riscos**
   - Custo: >1M tokens para apps simples, orchestrator reasoning é caro
   - Qualidade: "run for a day, come back to crap" — sem HITL, resultados degradam
-  - Context bloat: looping na mesma sessão sobrecarrega o LLM
-  - Complexidade: engenharia pesada para algo que "não merece seu próprio buzzword"
-  - Alucinação composta: erros se propagam entre rodadas
+  - Context bloat: looping na mesma sessêo sobrecarrega o LLM
+  - Complexidade: engenharia pesada para algo que "nêo merece seu próprio buzzword"
+  - Alucinaçêo composta: erros se propagam entre rodadas
   - Questionamento de Cole: "Boris manages tens of thousands of agents per day — is that practical?"
 
-- **Módulo 2.3 — Quando Usar e Quando Não Usar**
-  - Bom para: GitHub issues em batch, exploração, PoCs, tarefas repetitivas
-  - Ruim para: código de produção crítico, orçamento limitado, sem observabilidade
-  - Framework de decisão: "does this actually need a loop?"
-  - Regra de ouro: loops para distribuição, humanos para validação
+- **Módulo 2.3 — Quando Usar e Quando Nêo Usar**
+  - Bom para: GitHub issues em batch, exploraçêo, PoCs, tarefas repetitivas
+  - Ruim para: código de produçêo crítico, orçamento limitado, sem observabilidade
+  - Framework de decisêo: "does this actually need a loop?"
+  - Regra de ouro: loops para distribuiçêo, humanos para validaçêo
 
-### Trilha 3 — Implementação Técnica
-Mão na massa: como construir sistemas de loop.
+### Trilha 3 — Implementaçêo Técnica
+Mêo na massa: como construir sistemas de loop.
 
 - **Módulo 3.1 — Loop Básico com Claude Code**
   - Setup do /loop skill
@@ -85,7 +85,7 @@ Mão na massa: como construir sistemas de loop.
   - Human-in-the-loop: pause + approve antes de próxima rodada
   - Deploy com Retool para acesso remoto e em time
 
-- **Módulo 3.4 — Otimização de Custos**
+- **Módulo 3.4 — Otimizaçêo de Custos**
   - Mix de providers: Pi/Kimi para orchestrator, Claude para implementation
   - Model routing: modelos pequenos onde reasoning é simples
   - State externo: evitar context bloat mantendo estado no banco
@@ -144,7 +144,7 @@ Receitas prontas para copiar e usar.
     },
     {
       "id": "trilha3",
-      "titulo": "Implementação Técnica",
+      "titulo": "Implementaçêo Técnica",
       "modulos": ["modulo-3-1", "modulo-3-2", "modulo-3-3", "modulo-3-4"]
     },
     {
@@ -163,8 +163,8 @@ Receitas prontas para copiar e usar.
 
 ## Diretrizes de Conteúdo
 - Tom: honesto, prático, sem hype — seguir o tom do Cole Medin
-- Exemplos: todos com prompts copiáveis e explicação passo a passo
+- Exemplos: todos com prompts copiáveis e explicaçêo passo a passo
 - Código: TypeScript + Python quando relevante
-- Cada módulo tem seção "Prompt Pack" com prompts prontos para download
-- Cada módulo tem seção "Questionamentos" levantando dúvidas legítimas
+- Cada módulo tem seçêo "Prompt Pack" com prompts prontos para download
+- Cada módulo tem seçêo "Questionamentos" levantando dúvidas legítimas
 - Formato visual: INEMA dark premium âmbar/cyan, Tailwind CDN, learn layer v2
